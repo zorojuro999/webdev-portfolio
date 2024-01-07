@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Developer Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="styles/portfolio.css">
 </head>
 <body>
@@ -24,8 +28,8 @@
           <h3 class="banner-greeting">Hi, I  am</h3>
           <h1 class="banner-title">Udoy Khan</h1>
           <p>Amaka kag dila bala kora kag karbo tala basi basi taka diba ok bondo?<br>Assa taila aga aga pement ta patae daw. naila pora kager sugog hoba na kinto.</p>
-          <button class="btn-primary">Download CV</button>
-          <button class="btn-primary">Contact</button>
+          <button class="btn-primary"><i class="ri-download-line"></i>Download CV</button>
+          <button class="btn-contact"><i class="ri-phone-line"></i>Contact</button>
         </div>
         <img class="profile-pic" src="images/udoy.png" alt="harddd">
       </div>
@@ -135,7 +139,7 @@
              </div>
           </div>
           <div class="letstalk">
-            <button class="btn-primary">Let's talk</button>
+            <button class="btn-contact">Let's talk</button>
           </div>
         </section>
   </main>
@@ -153,6 +157,12 @@
     </div>
     <div class="footer-column">
       <h3 class="section-title">Hire Me</h3>
+      <form class="contact">
+        <input type="text" placeholder="Your name">
+        <input type="email" name="" id="" placeholder="Your email">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Describe the job"></textarea>
+        <input class="btn-primary" type="submit" value="submit">
+      </form>
     </div>
   </footer>
 </body>
