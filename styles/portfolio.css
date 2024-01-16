@@ -237,3 +237,62 @@ footer{
   border-radius: 5px;
   background: white;
 }
+
+/* responsive styles */
+.hide{
+  display: none;
+}
+/* mobile devices */
+
+@media screen and (max-width:576px) {
+  .header{
+    background-image: none;
+  }
+  .skills-container, .resume-container, .about-info-container, .banner, nav{
+    flex-direction: column;
+  }
+  footer, .about{
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+  .footer-column{
+    width: 100%;
+  }
+  textarea{
+    width: 70%;
+  }
+  .banner .profile-pic{
+    width: 100%; 
+  }
+  .banner{
+    padding: 20px;
+  }
+  .btn-primary{
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+  .skills-container, .resume-container, .about-info-container, .banner, nav{
+    flex-direction: column;
+  }
+  footer{
+    flex-direction: column;
+    padding: 0px 50px;
+  }
+  .footer-column{
+    width: 90%;
+  }
+  textarea{
+    width: 80%;
+  }
+  .banner .profile-pic{
+    width: 70%; 
+  }
+  .banner{
+    padding: 0px;
+  }
+  .btn-primary{
+    margin-bottom: 20px;
+  }
+}
